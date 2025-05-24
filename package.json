@@ -1,0 +1,10 @@
+{
+  "name": "share2nightscout-bridge",
+  "version": "1.0.0",
+  "description": "Dexcom Share to Nightscout bridge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}

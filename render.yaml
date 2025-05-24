@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: dexcom-bridge
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NIGHTSCOUT_HOST
+        value: https://your-nightscout-url
+      - key: API_SECRET
+        value: your-api-secret
+      - key: DEXCOM_USERNAME
+        value: your-dexcom-login
+      - key: DEXCOM_PASSWORD
+        value: your-dexcom-password
+      - key: DEXCOM_SERVER
+        value: OUS
